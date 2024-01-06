@@ -1,0 +1,23 @@
+import logo from './logo.svg';
+import './App.css';
+import { PrimerComponente } from './components/PrimerComponente';
+import { SegundoComponente } from './components/SegundoComponente';
+
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p> You can do whatever you dream </p>
+        
+        <PrimerComponente />
+
+        <hr/>
+
+        <SegundoComponente/>
+      </header>
+    </div>
+  );
+}
+
+export default App;

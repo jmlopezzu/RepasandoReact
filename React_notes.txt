@@ -1,0 +1,8 @@
+extension install: ES7 + React/ Redux/ React-Native and ...
+
+npx create-react-app repaso-react
+
+cd repaso-react
+
+npm start
+

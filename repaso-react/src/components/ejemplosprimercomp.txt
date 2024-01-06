@@ -1,0 +1,51 @@
+import React from 'react'
+
+export const PrimerComponente = () => {
+
+  let nombre = "Jose";
+  let web = "seafoodmanizales.com";
+  let lenguajesdeprogramacion = ["Python","Js","Php","Css","R"];
+
+  const
+  
+
+  return (
+    <div> 
+      <h1>PrimerComponente</h1>
+      <p>Este es un componente de prueba</p>
+      <p>Me fascina visitar {web}, allí encuentro gran variedad de productos</p>
+      <p>Mi nombre es {nombre} y los datos utilizados acá han sido llamados con llaves </p>
+      <button onClick={e => cambiarNombre(" Jose Full Stack")}> </button>
+
+
+      <h2> Programming Languages </h2>
+      <ul>
+        {lenguajesdeprogramacion.map((e, i) => <li key={
+          i //este atributo se utiliza para darle una clave única a cada
+          //elemento del array que se va a renderizar en el DOM
+          }>{e}</li>)}
+      </ul>
+
+      <h2> Programming Languages </h2>
+      <ul>
+        {lenguajesdeprogramacion.map( programminglanguage => {
+          return (<li>
+            {programminglanguage}
+          </li>)
+        })}
+      </ul>
+
+      <h2> Programming Languages </h2>
+      <ul>
+        {
+          lenguajesdeprogramacion.map((programminglanguage, indice) => {
+            return ( <li key = {indice}> 
+            {programminglanguage}
+            </li>);
+          })
+        }
+      </ul>
+
+    </div>
+  )
+}
